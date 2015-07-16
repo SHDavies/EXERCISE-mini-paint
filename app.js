@@ -3,7 +3,8 @@ $(document).ready(function() {
 		$(this).addClass(color);
 	})
 
-	var colors = "white green red blue yellow"
+	var color = 'white';
+	var colors = "white green red blue yellow";
 
 	$('.box').on('dblclick', function() {
 		$(this).removeClass(colors);
@@ -12,6 +13,8 @@ $(document).ready(function() {
 	$('#reset').on('click', function() {
 		$('.box').removeClass(colors);
 	})
+
+	// Changes color variable on click
 
 	$('#red').on('click', function() {
 		color = 'red';
